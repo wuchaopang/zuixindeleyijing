@@ -13,7 +13,7 @@ class delete: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         db = SQLiteDB.sharedInstance()
-        db.execute("create table if not exists t_user(uid integer primary key,name varchar(20),mobile varchar(20))")
+        db.execute("create table if not exists t_user(uid integer primary key,name varchar(20),mobile varchar(20),email varchar(20),address varchar(20))")
     }
     @IBAction func shanchu(sender: AnyObject) {
         del()
