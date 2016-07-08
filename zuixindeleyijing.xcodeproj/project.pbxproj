@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690A622C1D2C9BB40052D035 /* find.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690A622B1D2C9BB40052D035 /* find.swift */; };
+		690A62341D2C9E870052D035 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 690A62331D2C9E870052D035 /* libsqlite3.0.tbd */; };
+		690A62371D2C9F4E0052D035 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 690A62361D2C9F4E0052D035 /* data.db */; };
+		690A623C1D2C9F610052D035 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690A62391D2C9F610052D035 /* SQLiteDB.swift */; };
+		690A623D1D2C9F610052D035 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690A623A1D2C9F610052D035 /* SQLTable.swift */; };
+		690A623E1D2C9F610052D035 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690A623B1D2C9F610052D035 /* String-Extras.swift */; };
+		690A62401D2CA8460052D035 /* delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690A623F1D2CA8460052D035 /* delete.swift */; };
 		6960F5F81D2C8CC300CEC72A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6960F5F71D2C8CC300CEC72A /* AppDelegate.swift */; };
 		6960F5FA1D2C8CC300CEC72A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6960F5F91D2C8CC300CEC72A /* ViewController.swift */; };
 		6960F5FD1D2C8CC300CEC72A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6960F5FB1D2C8CC300CEC72A /* Main.storyboard */; };
@@ -34,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		690A622B1D2C9BB40052D035 /* find.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = find.swift; sourceTree = "<group>"; };
+		690A62331D2C9E870052D035 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		690A62351D2C9EB50052D035 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		690A62361D2C9F4E0052D035 /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = "<group>"; };
+		690A62391D2C9F610052D035 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		690A623A1D2C9F610052D035 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		690A623B1D2C9F610052D035 /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		690A623F1D2CA8460052D035 /* delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delete.swift; sourceTree = "<group>"; };
 		6960F5F41D2C8CC300CEC72A /* zuixindeleyijing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zuixindeleyijing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6960F5F71D2C8CC300CEC72A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6960F5F91D2C8CC300CEC72A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				690A62341D2C9E870052D035 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +90,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		690A62381D2C9F610052D035 /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				690A62391D2C9F610052D035 /* SQLiteDB.swift */,
+				690A623A1D2C9F610052D035 /* SQLTable.swift */,
+				690A623B1D2C9F610052D035 /* String-Extras.swift */,
+			);
+			path = SQLiteDB;
+			sourceTree = "<group>";
+		};
 		6960F5EB1D2C8CC300CEC72A = {
 			isa = PBXGroup;
 			children = (
+				690A62331D2C9E870052D035 /* libsqlite3.0.tbd */,
+				690A62361D2C9F4E0052D035 /* data.db */,
+				690A62381D2C9F610052D035 /* SQLiteDB */,
 				6960F5F61D2C8CC300CEC72A /* zuixindeleyijing */,
 				6960F60B1D2C8CC300CEC72A /* zuixindeleyijingTests */,
 				6960F6161D2C8CC300CEC72A /* zuixindeleyijingUITests */,
@@ -103,6 +132,9 @@
 				6960F5FE1D2C8CC300CEC72A /* Assets.xcassets */,
 				6960F6001D2C8CC300CEC72A /* LaunchScreen.storyboard */,
 				6960F6031D2C8CC300CEC72A /* Info.plist */,
+				690A622B1D2C9BB40052D035 /* find.swift */,
+				690A62351D2C9EB50052D035 /* Header.h */,
+				690A623F1D2CA8460052D035 /* delete.swift */,
 			);
 			path = zuixindeleyijing;
 			sourceTree = "<group>";
@@ -230,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6960F6021D2C8CC300CEC72A /* LaunchScreen.storyboard in Resources */,
+				690A62371D2C9F4E0052D035 /* data.db in Resources */,
 				6960F5FF1D2C8CC300CEC72A /* Assets.xcassets in Resources */,
 				6960F5FD1D2C8CC300CEC72A /* Main.storyboard in Resources */,
 			);
@@ -256,8 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				690A62401D2CA8460052D035 /* delete.swift in Sources */,
 				6960F5FA1D2C8CC300CEC72A /* ViewController.swift in Sources */,
+				690A623E1D2C9F610052D035 /* String-Extras.swift in Sources */,
+				690A623C1D2C9F610052D035 /* SQLiteDB.swift in Sources */,
+				690A622C1D2C9BB40052D035 /* find.swift in Sources */,
 				6960F5F81D2C8CC300CEC72A /* AppDelegate.swift in Sources */,
+				690A623D1D2C9F610052D035 /* SQLTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.zuixindeleyijing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/20141105049wch/Desktop/zuixindeleyijing/zuixindeleyijing/Header.h;
 			};
 			name = Debug;
 		};
@@ -416,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.zuixindeleyijing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/20141105049wch/Desktop/zuixindeleyijing/zuixindeleyijing/Header.h;
 			};
 			name = Release;
 		};
@@ -484,6 +524,7 @@
 				6960F61E1D2C8CC300CEC72A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6960F61F1D2C8CC300CEC72A /* Build configuration list for PBXNativeTarget "zuixindeleyijingTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +533,7 @@
 				6960F6211D2C8CC300CEC72A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6960F6221D2C8CC300CEC72A /* Build configuration list for PBXNativeTarget "zuixindeleyijingUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +542,7 @@
 				6960F6241D2C8CC300CEC72A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
