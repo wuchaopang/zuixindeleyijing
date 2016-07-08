@@ -5,6 +5,56 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Danyichazhao-->
+        <scene sceneID="LOa-9c-27V">
+            <objects>
+                <viewController id="YSb-HU-njy" customClass="danyichazhao" customModule="zuixindeleyijing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sa1-6g-tkK"/>
+                        <viewControllerLayoutGuide type="bottom" id="F9m-5b-UZU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WP9-md-BDb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liw-d9-ZIA">
+                                <rect key="frame" x="28" y="11" width="30" height="30"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="qsV-RC-G2x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9b-nI-paR">
+                                <rect key="frame" x="76" y="102" width="105" height="30"/>
+                                <state key="normal" title="按姓名进行查找"/>
+                                <connections>
+                                    <action selector="cahzhaoname:" destination="YSb-HU-njy" eventType="touchUpInside" id="L3w-A7-4Hc"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Neg-Eq-sqU" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="76" y="189" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.17289041690000001" green="0.85197277979999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qhj-6X-0Tq">
+                                <rect key="frame" x="33" y="304" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.16583413999999999" green="1" blue="0.2525123903" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="text1" destination="Neg-Eq-sqU" id="Vte-Ws-f8n"/>
+                        <outlet property="text2" destination="qhj-6X-0Tq" id="nYE-0s-KhY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENB-wt-eRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176" y="-249"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -38,6 +88,13 @@
                                     <segue destination="HMB-dL-eNK" kind="modal" id="lcI-XR-XFw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUs-B6-2pn">
+                                <rect key="frame" x="89" y="104" width="105" height="30"/>
+                                <state key="normal" title="查找单一联系人"/>
+                                <connections>
+                                    <segue destination="YSb-HU-njy" kind="modal" id="Fcx-5d-Qqe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -65,12 +122,6 @@
                                     <action selector="shanchu:" destination="Wb2-Be-Bsl" eventType="touchUpInside" id="4Tf-BA-ICf"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2K-Vu-qAC">
-                                <rect key="frame" x="188" y="28" width="97" height="30"/>
-                                <color key="backgroundColor" red="0.6025132138" green="1" blue="0.48176459999999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHS-hD-iXc">
                                 <rect key="frame" x="130" y="73" width="60" height="30"/>
                                 <state key="normal" title="返回首页"/>
@@ -78,6 +129,12 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" id="KJ6-fg-8x5"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2K-Vu-qAC">
+                                <rect key="frame" x="188" y="28" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.6025132138" green="1" blue="0.48176459999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -141,10 +198,36 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" id="QyB-fy-ugk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="邮箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rK5-70-4bL">
+                                <rect key="frame" x="30" y="161" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4my-o8-ANT">
+                                <rect key="frame" x="30" y="222" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C08-sP-nuH">
+                                <rect key="frame" x="121" y="161" width="97" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.84140408509999998" blue="0.4643536513" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adk-8T-EWy">
+                                <rect key="frame" x="121" y="222" width="97" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.84140408509999998" blue="0.4643536513" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="address" destination="adk-8T-EWy" id="TNm-I7-9Vg"/>
+                        <outlet property="email" destination="C08-sP-nuH" id="NCQ-XN-5FH"/>
                         <outlet property="name" destination="bE2-0g-1eA" id="96B-uF-8NH"/>
                         <outlet property="phone" destination="DSU-7t-iBd" id="xoE-gK-PaE"/>
                     </connections>
@@ -199,7 +282,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Jd6-lp-D6z"/>
+        <segue reference="QyB-fy-ugk"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="0.27535690522694445" green="0.19904069729253121" blue="0.94684636780104714" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.17289041690000001" green="0.85197277979999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -19,7 +19,8 @@ class find: UIViewController {
     //获取数据库实例
     db = SQLiteDB.sharedInstance()
     //如果表还不存在则创建表（其中uid为自增主键）
-    db.execute("create table if not exists t_user(uid integer primary key,uname varchar(20),mobile varchar(20),address varchar(20),email varchar(20))")
+        db.execute("create table if not exists t_user(uid integer primary key,uname varchar(20),mobile varchar(20),email varchar(20),address varchar(20))")
+
         //如果有数据则加载
         //initUser()
         
@@ -32,7 +33,7 @@ class find: UIViewController {
         {
             //获取最后一行数据显示
             let tuser = data[x]
-            text.text! += "姓名：" + String(tuser["uname"]!) + " 电话：" + String(tuser["mobile"]!)
+            text.text! += "姓名：" + String(tuser["uname"]!) + " 电话：" + String(tuser["mobile"]!)+"\n"
         }
         
     }

@@ -21,6 +21,7 @@
 		6960F6021D2C8CC300CEC72A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6960F6001D2C8CC300CEC72A /* LaunchScreen.storyboard */; };
 		6960F60D1D2C8CC300CEC72A /* zuixindeleyijingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6960F60C1D2C8CC300CEC72A /* zuixindeleyijingTests.swift */; };
 		6960F6181D2C8CC300CEC72A /* zuixindeleyijingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6960F6171D2C8CC300CEC72A /* zuixindeleyijingUITests.swift */; };
+		69C59D271D2F3924001C5FAF /* danyichazhao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C59D261D2F3924001C5FAF /* danyichazhao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		6960F6131D2C8CC300CEC72A /* zuixindeleyijingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zuixindeleyijingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6960F6171D2C8CC300CEC72A /* zuixindeleyijingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zuixindeleyijingUITests.swift; sourceTree = "<group>"; };
 		6960F6191D2C8CC300CEC72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C59D261D2F3924001C5FAF /* danyichazhao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = danyichazhao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				690A622B1D2C9BB40052D035 /* find.swift */,
 				690A62351D2C9EB50052D035 /* Header.h */,
 				690A623F1D2CA8460052D035 /* delete.swift */,
+				69C59D261D2F3924001C5FAF /* danyichazhao.swift */,
 			);
 			path = zuixindeleyijing;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C59D271D2F3924001C5FAF /* danyichazhao.swift in Sources */,
 				690A62401D2CA8460052D035 /* delete.swift in Sources */,
 				6960F5FA1D2C8CC300CEC72A /* ViewController.swift in Sources */,
 				690A623E1D2C9F610052D035 /* String-Extras.swift in Sources */,
